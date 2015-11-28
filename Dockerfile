@@ -6,6 +6,6 @@ MAINTAINER Dreampie
 
 ENV DEBIAN_FRONTEND noninteractive
 
-COPY logstash_netflow.conf /etc/logstash/conf.d/
+COPY logstash.conf /etc/logstash/conf.d/
 
 RUN /opt/logstash/bin/plugin install  --no-verify logstash-codec-netflow
